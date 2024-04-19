@@ -46,9 +46,7 @@ class LambdaStack(TerraformStack):
                     projection_type="ALL",
                     write_capacity=5,
                     read_capacity=5
-                )
-            ],
-            global_secondary_index=[
+                ),
                 DynamodbTableGlobalSecondaryIndex(
                     name="MapIndex",
                     hash_key="map",
